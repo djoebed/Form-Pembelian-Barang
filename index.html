@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perhitungan Pembelian Elektronik</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Selamat Datang di Toko Jubaidi Elektronik</h1>
+      <p>Belanja elektronik dengan pelayanan terbaik dan harga terjangkau</p>
+    </div>
+
+    <div class="container">
+      <!-- FORM -->
+      <div class="card">
+        <h2>Form Transaksi & Perhitungan Bonus Pembelian</h2>
+
+        <div class="form-group">
+          <label>Nama Pelanggan</label>
+          <input type="text" id="namaPelanggan" />
+        </div>
+
+        <div class="form-group">
+          <label>Nama Produk</label>
+          <input type="text" id="namaProduk" />
+        </div>
+
+        <div class="form-group">
+          <label>Harga Produk (Rp)</label>
+          <input type="number" id="hargaProduk" />
+        </div>
+
+        <div class="form-group">
+          <label>Jumlah Pembelian</label>
+          <input type="number" id="jumlahPembelian" />
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-hitung" id="btnHitung">Hitung</button>
+
+          <button class="btn btn-reset" id="btnReset">Reset</button>
+        </div>
+
+        <div class="info-enter">
+          Tekan <b>Enter</b> untuk berpindah ke field berikutnya dan menghitung
+          hasil. <br></br>
+          Belanja minimal Rp400.000 mendapatkan potonganRp50.000
+        </div>
+
+        <div id="error"></div>
+      </div>
+
+      <!-- HASIL -->
+      <div class="card" id="hasilCard">
+        <h2>Hasil Perhitungan</h2>
+
+        <p>
+          <strong>Nama Pelanggan :</strong>
+          <span id="hasilNama"></span>
+        </p>
+
+        <p>
+          <strong>Nama Produk :</strong>
+          <span id="hasilProduk"></span>
+        </p>
+
+        <p>
+          <strong>Total Belanja :</strong>
+          <span id="hasilBelanja"></span>
+        </p>
+
+        <p>
+          <strong>Potongan :</strong>
+          <span id="hasilPotongan"></span>
+        </p>
+
+        <p>
+          <strong>Total Bayar :</strong>
+          <span id="hasilBayar"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
